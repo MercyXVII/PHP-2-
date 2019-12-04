@@ -9,7 +9,7 @@
     }
     else if($operator == plus) {
       $num3 = $num1 + $num2;
-      Echo "Antwoord: ";
+      echo "Antwoord: ";
       echo "$num1 + $num2 =";
       echo $num3;
     }

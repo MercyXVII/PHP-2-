@@ -14,9 +14,9 @@
             <option value="delen"> / </option>
           </select><br>
           <input type="number" name="nummer2" placeholder="Nummer 2"><br>
-          <input type="submit" name="submit" value="Reken uit"><br>
+          <input type="submit" name="submit" value="Enter"><br>
             <?php
-            include 'calculator.php'
+            include('calculator.php');
             ?>
       </body>
   </html>
