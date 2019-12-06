@@ -5,12 +5,10 @@
     <title>Input checker</title>
   </head>
   <body>
-    <form method="post"><br><br>
+    <form method="post"> <br>
       <input type="text" name="check" placeholder="Vul in"> <br>
-      <input type="submit" name="submit">
-    </form>
-
+      <input type="submit" name="submit" value="Submit">
+    </form> <br>
     <?php include('includes/functions.php'); ?>
-
   </body>
 </html>
