@@ -8,7 +8,7 @@
 //Is het alleen letters?
   $letters = alfabetisch($check);
   function alfabetisch($check) {
-    if(ctype_alnum($_POST['check'])) {
+    if(!preg_match('/[^A-Za-z]/', $check)) {
       echo "Er zitten alleen letters in<br><br>";
     }
     else {
@@ -19,7 +19,7 @@
 //Is het een getal?
   $nummer = nummer($check);
   function nummer($check) {
-    if(is_numeric($_POST['check'])) {
+    if(preg_match('/^[0-9]+$/', $check)) {
       echo "Er zitten alleen cijfers in<br><br>";
     } else {
       echo "Er zitten ook letters en/of tekens in<br><br>";
@@ -42,11 +42,11 @@
     switch($check) {
       case "vrouw":
       case "Vrouw":
-        echo "Het is een vrouw<br><br>";
+        echo "Je hebt vrouw ingevuld<br><br>";
         break;
       case "man":
       case "Man":
-        echo "Het is een man<br><br>";
+        echo "Je hebt man ingevuld<br><br>";
         break;
       default:
         echo "U bent geen man of vrouw<br><br>";
