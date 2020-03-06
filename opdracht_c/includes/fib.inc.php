@@ -1,11 +1,17 @@
 <?php
-function fibonacci($b) {
- if ($b = 0) { 
- return 0; } 
- if ($b <= 2) {
- return 1; } 
- return fibonacci($b-1) + fibonacci($b-2);
-  }
+
+  function fibonacci($n) {
+    if ($n <= 1) {
+        return $n;
+      }
+
+      $fib = fibonacci($n - 1) + fibonacci($n - 2);
+      return $fib;
  }
-echo fibonacci(10);
+
+  $n = 9;
+  for ($i = 1; $i <= $n; $i++) {
+    echo fibonacci($i) .", ";
+  }
+
 ?>
